@@ -11,7 +11,7 @@ import { authSessionStorage, currentApi } from "@/utils/storage";
 export const Header = () => {
   const navigate = useNavigate();
   const authInfo = useAuth();
-  const [apiUrl, setApiUrl] = useState(currentApi.get() ?? "http://15.165.67.223:8080");
+  const [apiUrl, setApiUrl] = useState(currentApi.get() ?? "//15.165.67.223:8080");
 
   const handleLogin = () => {
     navigate(getDynamicPath.login());
